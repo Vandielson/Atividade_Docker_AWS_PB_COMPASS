@@ -13,7 +13,7 @@ curl -L https://github.com/docker/compose/releases/latest/download/docker-compos
 chmod +x /usr/local/bin/docker-compose
 mv /usr/local/bin/docker-compose /bin/docker-compose
 
-curl -sL https://raw.githubusercontent.com/LucasEmanoel/compass-docker/main/docker-compose.yml --output /home/ec2-user/docker-compose.yml
+curl -sL https://raw.githubusercontent.com/Vandielson/Atividade_Docker_AWS_PB_COMPASS/main/Docker-compose.yml --output /home/ec2-user/docker-compose.yml
 
 mkdir -p /mnt/efs/vandielson/var/www/html
 
