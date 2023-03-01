@@ -22,7 +22,7 @@ services:
       - "80:80"
     restart: always
     volumes:
-      - /mnt/efs/Vandielson/var/www/html:/var/www/html
+      - /mnt/efs/vandielson/var/www/html:/var/www/html
     environment:
       TZ: America/Recife
       WORDPRESS_DB_HOST: db
