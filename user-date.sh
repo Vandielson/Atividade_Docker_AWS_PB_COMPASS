@@ -17,9 +17,9 @@ curl -sL https://raw.githubusercontent.com/Vandielson/Atividade_Docker_AWS_PB_CO
 
 mkdir -p /mnt/efs/vandielson/var/www/html
 
-mount -t efs fs-00551b6438692354b.efs.us-east-1.amazonaws.com:/ /mnt/efs
+mount -t efs fs-06b0d9af54c842dd6.efs.us-east-1.amazonaws.com:/ /mnt/efs
 chown ec2-user:ec2-user /mnt/efs
 
-echo "fs-00551b6438692354b.efs.us-east-1.amazonaws.com:/ /mnt/efs nfs defaults 0 0" >> /etc/fstab
+echo "fs-06b0d9af54c842dd6.efs.us-east-1.amazonaws.com:/ /mnt/efs nfs defaults 0 0" >> /etc/fstab
 
 /bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d
