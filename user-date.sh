@@ -22,4 +22,5 @@ chown ec2-user:ec2-user /mnt/efs
 
 echo "fs-06b0d9af54c842dd6.efs.us-east-1.amazonaws.com:/ /mnt/efs nfs defaults 0 0" >> /etc/fstab
 
-/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d
+docker-compose -f /home/ec2-user/docker-compose.yml up -d
+
