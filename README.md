@@ -8,7 +8,7 @@
 
 * [Criação do user-data](#criação-do-user-data)
 
-* [Criação do arquivo Docker Compose para execução dos containers](#criação-do-arquivo-docker-compose-para-execução-dos-cantainers)
+* [Criação do arquivo Docker Compose para execução dos containers](#criação-do-arquivo-docker-compose-para-execução-dos-containers)
 
 * [Criação de uma Bastion Host](#criação-de-uma-bastion-host)
 
@@ -234,9 +234,9 @@ Serão necessárias duas tabelas de roteamento, uma para as sub-redes públicas 
 
 6. Adicione uma regra de roteamento para cada sub-rede que você criou anteriormente. Cada regra de roteamento deve especificar a sub-rede de destino e o gateway de internet (se o destino for a Internet) ou um gateway NAT (NAT – Conversão de endereços de rede). Você pode usar um gateway NAT para que as instâncias em uma sub-rede privada possam se conectar a serviços fora da VPC, mas os serviços externos não podem iniciar uma conexão com essas instâncias. 
 
-* Observação: Para a tabela de rotas com as sub-redes públicas utilize o gateway de internet e para a tabela com as privadas utilize gateway NAT.
-
 7. Clique em "Salvar rotas".
+
+* Observação: Para a tabela de rotas com as sub-redes públicas utilize o gateway de internet e para a tabela com as privadas utilize gateway NAT.
 
 Ao criar as tabelas de roteamento, você está especificando como o tráfego de rede é encaminhado em sua VPC. Isso permite que você controle o acesso de rede em sua infraestrutura, aumente a segurança e a eficiência da rede e atenda aos requisitos de suas aplicações.
 
