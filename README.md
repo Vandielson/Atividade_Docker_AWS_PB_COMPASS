@@ -212,8 +212,6 @@ Para criar as sub-redes, siga os passos abaixo:
 
 6. Repita o processo para criar as demais sub-redes.
 
-* Importante: Lembre-se de que as sub-redes criadas devem estar na mesma VPC, mas em diferentes zonas de disponibilidade. Isso garante que as instâncias sejam distribuídas em diferentes zonas de disponibilidade para evitar possíveis interrupções devido a falhas em uma única zona de disponibilidade.
-
 ### Passo 3: Criar as tabelas de roteamento para as sub-redes
 
 As tabelas de roteamento são componentes fundamentais da infraestrutura de rede da Amazon Web Services (AWS). Elas permitem que você controle o fluxo de tráfego em sua rede, especificando o destino de cada pacote de dados. Cada tabela de roteamento contém uma série de regras de roteamento que determinam para onde o tráfego deve ser encaminhado.
@@ -257,8 +255,6 @@ Agora vamos criar a Instância Privada:
 2. Escolha uma AMI (Amazon Machine Image) e selecione o tipo de instância que você deseja criar. Na próxima tela, escolha a VPC e a sub-rede privada que você criou anteriormente.
 
 3. Selecione a opção de criar um grupo de segurança e insira todas as regras necessárias para o pleno funcionamento da aplicação WordPress e o banco de dados MySQL. Realizar a liberação das portas: 22/TCP, 111/TCP e UDP, 2049/TCP e UDP, 80/TCP, 443/TCP, 3306/TCP.
-
-* Atenção: Todas as portas podem estar liberadas para qualquer IP, porém a porta 80 deve ser liberada apenas para o IP da sua Bastion Host, deixando-a ainda mais segura.
 
 ### Passo 6: Configurar o Load Balancer
 
