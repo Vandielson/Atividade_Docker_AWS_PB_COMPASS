@@ -182,7 +182,7 @@ Aqui está uma explicação de cada parte do script:
 * driver: define o driver da rede. Neste caso, o valor "bridge" indica que o Docker usará a rede padrão do Docker para o aplicativo.
 
 
-## Criação de uma Bastion Host
+## Criação de um Bastion Host
 
 Como um dos requisitos da atividade é não utilizar IP público na instância e somente realizar o acesso a aplicação WordPress por meio de um Load Balancer, então a solução mais adequada é a criação de um Bastion Host na AWS (Amazon Web Services) com o uso de um Load Balancer para acessar a aplicação na instância privada. A Bastion Host é um servidor seguro que atua como um ponto de entrada para acessar sua rede privada de dentro da nuvem AWS. A seguir serão descritos os passos necessários para criação do Bastion Host.
 
@@ -238,7 +238,7 @@ Serão necessárias duas tabelas de roteamento, uma para as sub-redes públicas 
 
 Ao criar as tabelas de roteamento, você está especificando como o tráfego de rede é encaminhado em sua VPC. Isso permite que você controle o acesso de rede em sua infraestrutura, aumente a segurança e a eficiência da rede e atenda aos requisitos de suas aplicações.
 
-### Passo 4: Criar a Bastion Host
+### Passo 4: Criar o Bastion Host
 
 1. Agora é preciso criar a Bastion Host. Clique em "Instâncias" no menu principal e em seguida, clique em "Launch Instance".
 
